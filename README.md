@@ -22,6 +22,8 @@ devtools::install_github("jennybc/regexcite")
 
 ## Usage
 
+### str_split_one
+
 A fairly common task when dealing with strings is the need to split a
 single string into many parts. This is what `base::strplit()` and
 `stringr::str_split()` do.
@@ -65,6 +67,8 @@ y <- "192.168.0.1"
 str_split_one(y, pattern = stringr::fixed("."))
 #> [1] "192" "168" "0"   "1"
 ```
+
+### my_add
 
 The `my_add()` function is a simple function that takes two parameters,
 x and y, and returns their sum. If only one parameter is provided, y

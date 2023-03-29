@@ -32,6 +32,8 @@ devtools::install_github("jennybc/regexcite")
 
 ## Usage
 
+### str_split_one
+
 A fairly common task when dealing with strings is the need to split a single string into many parts.
 This is what `base::strplit()` and `stringr::str_split()` do.
 
@@ -63,6 +65,8 @@ str_split_one(x, pattern = ",", n = 2)
 y <- "192.168.0.1"
 str_split_one(y, pattern = stringr::fixed("."))
 ```
+
+### my_add
 
 The `my_add()` function is a simple function that takes two parameters, x and y, and returns their sum. If only one parameter is provided, y defaults to 10. If either x or y is not numeric, the function will stop and return an error message. If either x or y is NA, the function will return NA.
 
