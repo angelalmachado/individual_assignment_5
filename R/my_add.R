@@ -1,6 +1,6 @@
 #' Add two numbers
 #'
-#' This function takes two parameters,x and y, and returns their sum.
+#' This function takes two parameters, x and y, and returns their sum.
 #' If only one parameter is provided, y defaults to 10.
 #'
 #' @param x A numeric value.
@@ -16,11 +16,11 @@
 #' my_add("10", "20")
 
 my_add <- function(x, y = 10) {
-  if (!is.numeric(x) || !is.numeric(y)) {
-    stop("One of your inputs contains a string value")
-  }
   if (is.na(x) || is.na(y)) {
     return(NA)
+  }
+  if (!is.numeric(x) || !is.numeric(y)) {
+    stop("One of your inputs contains a string value")
   }
   return(x + y)
 }

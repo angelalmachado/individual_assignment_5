@@ -73,3 +73,17 @@ y <- "192.168.0.1"
 str_split_one(y, pattern = stringr::fixed("."))
 #> [1] "192" "168" "0"   "1"
 ```
+
+The `my_add()` function is a simple function that takes two parameters,
+x and y, and returns their sum. If only one parameter is provided, y
+defaults to 10. If either x or y is not numeric, the function will stop
+and return an error message. If either x or y is NA, the function will
+return NA.
+
+``` r
+my_add(1, 2)
+#> [1] 3
+
+my_add(NA)
+#> [1] NA
+```
